@@ -53,10 +53,10 @@ function style() {
 function js() {
     return src([
             // `${srcDir}/js/jquery-3.5.1.js`,
-            `${srcDir}/js/!(index)*.js`,
-            `${srcDir}/js/index.js`
+            `${srcDir}/js/!(main)*.js`,
+            `${srcDir}/js/main.js`
         ])
-        .pipe(concat("index.js"))
+        .pipe(concat("main.js"))
         .pipe(uglify())
         .pipe(gulp.dest(destDir + "/js"));
 }
