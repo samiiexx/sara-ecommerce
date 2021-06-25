@@ -1,11 +1,12 @@
-# Sara
+# Sara E-commerce Website
+This is a test project for a fashion e-commerce website.
 
 ![Sara](screenshot.jpg)
 
 ## Built With
 - HTML5
-- CSS3
 - SASS
+- JS
 
 ## Requirements
  - NPM
