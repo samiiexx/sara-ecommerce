@@ -1,0 +1,14 @@
+@mixin screen($size) {
+    $md: "(min-width: 992px)";
+    // $sm: "(min-width: 576px)";
+    @if $size==md {
+        @media only screen and #{$md} {
+            @content;
+        }
+    }
+    @else {
+        @media only screen and #{$size} {
+            @content;
+        }
+    }
+}
